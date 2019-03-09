@@ -1,3 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../favicon.ico">
+  <title>Dashboard</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/dashboard1.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
 <?php
 include('../one_connection.php');
 
@@ -20,7 +38,7 @@ echo '<a href="#Event name">Event name and amount </a>'.'</br>'.'</br>';
 echo '<a href="#Event context">Event context and amount </a>'.'</br>'.'</br>';
 
 // table 1: "Event name" and "Amount of event"
-echo '<table border=1 id="Event name">';
+echo '<table class="table table-striped" id="Event name">';
 echo "<tr><th>Event name</th><th>Amount of event</th></tr>";
 $sql = "SELECT Name, COUNT(  `Id` ) count
 FROM event
@@ -34,7 +52,7 @@ while($row=mysql_fetch_array($query)){
 echo "</table></br>";
 
 // table 2: "Event context" and "Amount of event"
-echo '<table border=1 id="Event context">';
+echo '<table class="table table-striped" id="Event context">';
 echo "<tr><th>Event context</th><th>Amount of event</th></tr>";
 $sql = "SELECT Prefix, Context, COUNT(  `Id` ) count
 FROM event
@@ -49,3 +67,8 @@ echo "</table>";
 
 mysql_close($link);
 ?>
+  </div>
+
+  <script type="text/javascript" src="../js/jquery-3.2.1.js"></script>
+</body>
+</html>

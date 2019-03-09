@@ -27,7 +27,7 @@
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="../demo/index.html">Back</a>
+        <a class="nav-link">Organised Access to Historical Student Data </a>
       </li>
     </ul>
   </div>
@@ -46,9 +46,6 @@
         <li class="nav-item">
           <a class="nav-link active" href="./CriticalQuestions.html">Critical Questions<span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./DataQuery.html">Data query</a>
-        </li>		
       </ul>
     </nav>
     <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
@@ -63,7 +60,7 @@
         <option  id="PleaseSelectSemester">SelectSemester</option>
       </select>
       </br></br>
-      <button id="Hide">Show/Hide Semester and Assignments start/end day</button>
+      <button id="Hide" class="btn btn-outline-primary">Show/Hide Semester and Assignments start/end day</button>
       <div id="SemesterAndAssignmentInformation" style="display:none">
         <div id="SemesterInformation">
           </br>
@@ -106,13 +103,13 @@
         <input type="text" id="QuestionOneTo">
       </div>
       </br>
-      <button type="button" id="QuestionOneFilter">Update</button>&nbsp
-      <button type="button" id="QuestionOneGetAnswer">Get answer</button>
+      <button type="button" class="btn btn-outline-primary" id="QuestionOneFilter">Update</button>&nbsp
+      <button type="button" class="btn btn-outline-primary" id="QuestionOneGetAnswer">Get answer</button>
       </br></br>
       <div id="R">
       </div>
       <div>
-        <table border="1" id="QuestionOneTable">
+        <table class="table table-striped" id="QuestionOneTable">
           <tr>
             <th>User</th>
             <th>Amount of events</th>

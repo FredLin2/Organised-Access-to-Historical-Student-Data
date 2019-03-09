@@ -5,7 +5,7 @@
     */
     date_default_timezone_set('PRC'); 
     $host="localhost";
-    $db_user="";
+    $db_user="root";
     $db_pass="";
     $db_name="studentdata";
     
